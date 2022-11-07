@@ -1,0 +1,10 @@
+1. Membuat method getter
+Contoh:
+public String getTitleBook() {
+return titleBook;
+}
+
+2. Memanggil method getter
+Contoh pada class Book:
+Book book = new Book()
+String title = book.getTitleBook();

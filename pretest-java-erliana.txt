@@ -1,0 +1,17 @@
+1. Bukan
+2. int angka = 7;
+3. System.out.println("Hello World")
+4. for(int a = 1, <= 29, a++){
+   System.out.println(a);
+   }
+5. 0
+6. import java.util.Scanner;
+
+   int tanggal = 0;
+   string nama = "";
+   if(tanggal % 7){
+   Scanner inp = new Scanner(System.in)
+   System.out.println(nama:"Erliana")   
+   nama = input.nextLine();
+   
+   }
