@@ -31,7 +31,7 @@ public class App {
         Scanner inp = new Scanner(System.in);
         System.out.print("Enter total elements: ");
         n = inp.nextInt();
-        int[] arr1 = new int[10];
+        int[] arr1 = new int[n];
         System.out.println("Enter the elements: ");
         for(int i=0; i < n; i++){
             arr1[i] = inp.nextInt();
@@ -41,7 +41,7 @@ public class App {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter total elements for array 2: ");
         m = input.nextInt();
-        int[] arr2 = new int[10];
+        int[] arr2 = new int[m];
         System.out.println("Enter the elements: ");
         for(int j=0; j < m; j++){
             arr2[j] = inp.nextInt();
@@ -80,8 +80,8 @@ public class App {
         System.out.println("==================");
         System.out.print("Sorting array: ");
         for(int i=0; i < arr1.length; i++){
-            for(int j = i + 1; j < arr2.length; j++){
-                if (arr1[i] == arr1[j]) {
+            for(int j = i + 1; j < arr1.length; j++){
+                if (arr1[i] > arr1[j]) {
                     temp = arr1[i];
                     arr1[i] = arr1[j];
                     arr1[j] = temp;
