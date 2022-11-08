@@ -62,6 +62,15 @@ public class App {
             System.out.print(arr2[j] + " ");
         }
 
+        System.out.print("The duplicate between arr1 and arr2: ");
+        for(int k=0; k < arr1.length; k++){
+            for(int l=0; l < arr2.length; l++){
+                if (arr1[k] == arr2[l]) {
+                    System.out.print(arr1[k] + " ");
+                }
+            }
+        }
+
         first.close();
         last.close();
         birthplace.close();
