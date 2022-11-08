@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        //Profile
         Scanner first = new Scanner(System.in);
         System.out.print("Enter your first name: ");
         String firstName = first.nextLine();
@@ -24,6 +25,8 @@ public class App {
         System.out.print("Enter your favorite program language: ");
         String progrLangFav = birthplace.nextLine();
 
+
+        //Search duplicate elements
         int n = 0;
         Scanner inp = new Scanner(System.in);
         System.out.print("Enter total elements: ");
@@ -72,6 +75,7 @@ public class App {
             }
         }
 
+        //Array sort
         int temp = 0;
         System.out.println("==================");
         System.out.print("Sorting array: ");
