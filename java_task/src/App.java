@@ -62,6 +62,7 @@ public class App {
             System.out.print(arr2[j] + " ");
         }
 
+        System.out.println("==================");
         System.out.print("The duplicate between arr1 and arr2: ");
         for(int k=0; k < arr1.length; k++){
             for(int l=0; l < arr2.length; l++){
@@ -70,6 +71,21 @@ public class App {
                 }
             }
         }
+
+        int temp = 0;
+        System.out.println("==================");
+        System.out.print("Sorting array: ");
+        for(int i=0; i < arr1.length; i++){
+            for(int j = i + 1; j < arr2.length; j++){
+                if (arr1[i] == arr1[j]) {
+                    temp = arr1[i];
+                    arr1[i] = arr1[j];
+                    arr1[j] = temp;
+                }
+            }
+            System.out.print(arr1[i]);
+        }
+
 
         first.close();
         last.close();
