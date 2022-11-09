@@ -83,6 +83,12 @@ public class Main {
                     person.getPerson();
                     break;
 
+                case "4":
+                    System.out.println("Menampilkan riwayat pendidikan");
+                    Academic academic = new Academic(main.namaSD, main.namaSMP, main.namaSMA, main.namaUniversitas);
+                    academic.getAcademic();
+                    break;
+
                 default:
                     System.out.println("Menu yang dipilih belum tersedia");
                     break;
