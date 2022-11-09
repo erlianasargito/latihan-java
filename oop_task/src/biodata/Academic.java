@@ -19,4 +19,14 @@ public class Academic {
     public void setNamaUniversitas(String univ) {
         this.namaUniversitas = univ;
     }
+
+    public String getAcademicHistory() {
+        return this.namaSD + ", " + this.namaSMP + ", " + this.namaSMA + ", " + this.namaUniversitas;
+    }
+
+    public void getPerson() {
+        System.out.println("Biodata Pribadi");
+        System.out.println("================");
+        System.out.println("Riwayat Pendidikan: " + getAcademicHistory());
+    }
 }

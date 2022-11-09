@@ -6,7 +6,7 @@ public class Main {
     Scanner inp = new Scanner(System.in);
     String terpilih;
     String firstName, lastName, domicile;
-    int nik, birthYear = 0;
+    int birthYear = 0;
     String namaSD, namaSMP, namaSMA, namaUniversitas;
     String tamat;
 
@@ -17,8 +17,8 @@ public class Main {
         System.out.println("Silakan input menu untuk melanjutkan:");
         System.out.println("1. Input data pribadi");
         System.out.println("2. Input data pendidikan");
-        System.out.println("3. Tampilkan data pribadi");
-        System.out.println("4. Tampilkan data pendidikan");
+        System.out.println("3. Menampilkan data pribadi");
+        System.out.println("4. Menampilkan data pendidikan");
         System.out.println("Menu yang dipilih:");
         terpilih = inp.nextLine();
     }
@@ -32,8 +32,6 @@ public class Main {
                 case "1":
                     System.out.println("Input data pribadi");
                     System.out.println("");
-                    System.out.println("Masukkan NIK:");
-                    main.nik = main.inp.nextInt();
                     System.out.println("Masukkan Nama Depan:");
                     main.firstName = main.inp.nextLine();
                     System.out.println("Masukkan Nama Belakang:");
@@ -44,6 +42,7 @@ public class Main {
                     main.birthYear = main.inp.nextInt();
 
                     System.out.println("Data berhasil tersimpan!");
+                    main.inp.nextLine();
                     break;
 
                 case "2":
@@ -78,9 +77,19 @@ public class Main {
                     System.out.println("Data pendidikan berhasil tersimpan!");
                     break;
 
+                case "3":
+                    System.out.println("Menampilkan data pribadi");
+                    Person person = new Person(main.firstName, main.lastName, main.domicile, main.birthYear);
+                    person.getPerson();
+                    break;
+
                 default:
+                    System.out.println("Menu yang dipilih belum tersedia");
                     break;
             }
-        } while (main.terpilih.equalsIgnoreCase(null));
+            System.out.println("Apakah anda ingin keluar aplikasi? (y/n)");
+            main.terpilih = main.inp.nextLine();
+        } while (main.terpilih.equalsIgnoreCase("n"));
+        System.out.println("Anda telah keluar aplikasi, silakan masuk kembali..");
     }
 }
