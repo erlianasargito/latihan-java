@@ -1,7 +1,11 @@
 package biodata;
 
-public class Academic {
+public class Academic extends Person {
     private String namaSD, namaSMP, namaSMA, namaUniversitas = "";
+
+    public Academic() {
+        
+    }
 
     public Academic(String namaSD, String namaSMP, String namaSMA, String namaUniversitas){
         this.namaSD = namaSD;

@@ -5,6 +5,10 @@ public class Person {
     int birthYear = 0;
     int currentYear = 2022;
 
+    public Person() {
+
+    }
+    
     public Person(String firstName, String lastName, String domicile, int birthYear){
         this.firstName = firstName;
         this.lastName = lastName;
