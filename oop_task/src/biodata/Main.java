@@ -19,12 +19,15 @@ public class Main {
         System.out.println("2. Input data pendidikan");
         System.out.println("3. Menampilkan data pribadi");
         System.out.println("4. Menampilkan data pendidikan");
+        System.out.println("5. Menampilkan data keseluruhan");
         System.out.println("Menu yang dipilih:");
         terpilih = inp.nextLine();
     }
 
     public static void main(String[] args) {
         Main main = new Main();
+        Person person = new Person();
+        Academic academic = new Academic();
 
         do {
             main.menu();
@@ -79,13 +82,20 @@ public class Main {
 
                 case "3":
                     System.out.println("Menampilkan data pribadi");
-                    Person person = new Person(main.firstName, main.lastName, main.domicile, main.birthYear);
+                    // person.setFirstName(main.firstName);
+                    person = new Person(main.firstName, main.lastName, main.domicile, main.birthYear);
                     person.getPerson();
                     break;
 
                 case "4":
                     System.out.println("Menampilkan riwayat pendidikan");
-                    Academic academic = new Academic(main.namaSD, main.namaSMP, main.namaSMA, main.namaUniversitas);
+                    academic = new Academic(main.namaSD, main.namaSMP, main.namaSMA, main.namaUniversitas);
+                    academic.getAcademic();
+                    break;
+
+                case "5":
+                    System.out.println("Menampilkan data keseluruhan");
+                    person.getPerson();
                     academic.getAcademic();
                     break;
 

@@ -2,8 +2,9 @@ package biodata;
 
 public class Person {
     private String firstName, lastName, domicile = "";
-    int birthYear = 0;
-    int currentYear = 2022;
+    //private (private udah termasuk encapsulation krn tidak bisa sembarangan diakses) 
+    private int birthYear = 0;
+    private int currentYear = 2022;
 
     public Person() {
 
