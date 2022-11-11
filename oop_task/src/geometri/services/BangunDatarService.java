@@ -14,7 +14,7 @@ public interface BangunDatarService {
         return 0;
     }
 
-    default double hitungLuasLingkaran() {
+    default double hitungLuasLingkaran(double jarijari) {
         return 0;
     }
 
@@ -26,7 +26,7 @@ public interface BangunDatarService {
         return 0;
     }
 
-    default double hitungKelilingLingkaran() {
+    default double hitungKelilingLingkaran(double jarijari) {
         return 0;
     }
 

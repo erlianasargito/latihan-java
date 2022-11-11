@@ -59,6 +59,7 @@ public class Main {
                     main.inp.nextLine();
 
                     lingkaran = new Lingkaran(main.jarijari);
+                    lingkaran.menggambarBangun();
                     lingkaran.getLingkaran();
 
                     break;

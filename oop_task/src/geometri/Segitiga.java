@@ -68,12 +68,11 @@ public class Segitiga implements BangunDatarService {
     }
 
     public void getSegitiga() {
-        double luasSegitiga = hitungLuasSegitiga(getAlas(), getTinggi());
         double kelilingSegitiga = hitungKelilingSegitiga(getAlas(), getTinggi(), getSisi());
 
         System.out.println("==================================");
         karakteristikBangunan();
-        System.out.println("Luas segitiga: " + luasSegitiga);
+        System.out.println("Luas segitiga: " + hitungLuasSegitiga(getAlas(), getTinggi()));
         System.out.println("Keliling segitiga: " + kelilingSegitiga);
     }
 }
